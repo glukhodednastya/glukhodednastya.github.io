@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Momentum</title>
+
+</head>
+
+<body>
+
+    <svg style="display: none">
+        <svg id="change__quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35px" height="35px">
+            <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+        </svg>
+        <svg id="change__background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px" height="50px">
+            <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+        </svg>
+    </svg>
+
+    <div class="wrapper">
+
+        <div class="container__weather">
+
+            <div class="weather__up">
+                <div class="weather__up_text">
+                    <span class="location2" contenteditable="true"></span>
+                    <span class="weather"></span>
+                </div>
+                <div class="weather__up_image"></div>
+            </div>
+
+            <div class="weather__down">
+                <span class="windAndHumidity"></span>
+                <span class="condition"></span>
+            </div>
+
+        </div>
+
+        <time class="date"></time>
+        <time class="time"></time>
+        <h1>
+            <span class="greeting"></span>
+            <span class="name" contenteditable="true"></span>
+        </h1>
+        <h2>Goal for today</h2>
+        <h2 class="focusEnter" contenteditable="true"></h2>
+
+        <div class="container__quote">
+
+            <div class="quote__content">
+                <div class="quote__en"></div>
+                <div class="quote__author"></div>
+            </div>
+
+            <a href="#" class="icon__quote">
+                <svg class="icon__quote__svg">
+                    <use xlink:href="#change__quote"></use>
+                </svg>
+            </a>
+
+        </div>
+
+        <a href="#" class="icon__background">
+            <svg class="icon__background__svg">
+                <use xlink:href="#change__background"></use>
+            </svg>
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
