@@ -1,0 +1,134 @@
+body {
+  background-color: #FAE2E2;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold; }
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px; }
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #5B5B5B;
+  border: 1px solid black;
+  margin: 1px;
+  font-size: xx-large;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: top 1s, left 1s, right 1s, bottom 1s;
+  z-index: 5; }
+  @media (max-width: 1200px) {
+    .square {
+      width: 80px;
+      height: 80px; } }
+  @media (max-width: 768px) {
+    .square {
+      width: 40px;
+      height: 40px;
+      font-size: x-large; } }
+  @media (max-width: 414px) {
+    .square {
+      width: 30px;
+      height: 30px;
+      font-size: large; } }
+
+@media (max-width: 414px) {
+  .wrapperActiveButton {
+    flex-direction: column; } }
+
+.wrapperAlertWin {
+  background-color: #b9b8a3c2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 55; }
+
+.alertWin {
+  position: relative;
+  top: 20%;
+  left: 25%;
+  width: 50vw;
+  background-color: #5B5B5B;
+  border-radius: 3vw;
+  font-size: 4vw;
+  padding: 5%; }
+
+.wrapperActiveButton,
+.wrapperStepsTime,
+.wrapperInfo,
+.wrapperOtherSize {
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: larger; }
+
+.wrapperOtherSize {
+  margin: 20px 0;
+ }
+
+.wrapperArea {
+  display: inline-flex;
+  flex-wrap: wrap;
+ }
+
+.emptySquare {
+  background-color: #561616;
+  z-index: 1; }
+
+.activeButton {
+  cursor: pointer;
+  font-size: larger;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: #FAE2E2; }
+
+.draggable-tile {
+  cursor: pointer;
+ }
+
+.draggable-tile:hover {
+  border: 2px solid black; }
+
+.results-background {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 41, 41, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.hidden {
+  display: none; }
+
+.results-content {
+  width: 70%;
+  height: 50%;
+  background-color: #DBDBDB;
+  cursor: auto;
+  position: relative;
+  overflow: auto; }
+
+.close-results {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-weight: 900;
+  width: 20px;
+  height: 20px; }
